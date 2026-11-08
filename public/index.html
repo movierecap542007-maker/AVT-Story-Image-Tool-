@@ -1,89 +1,21 @@
 <!doctype html>
-<html lang="my">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#00483f">
-  <title>AVT Studio — Story & Image Prompt</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  <main class="shell">
-    <header class="topbar">
-      <div class="brand-mark">AVT</div>
-      <div><div class="brand-title">AVT Studio</div><div class="brand-sub">AI Story & Image Prompt Tool</div></div>
-      <span class="free-tag">TEXT AI</span>
-    </header>
-
-    <section class="hero">
-      <p class="eyebrow">CREATE • IMAGINE • WRITE</p>
-      <h1>ကိုယ့်စိတ်ကူးကို<br>ဇာတ်လမ်းနဲ့ Prompt အဖြစ်ဖန်တီးပါ</h1>
-      <p>မြန်မာ / English · Story ရေးရန် · Image Prompt ပြုလုပ်ရန်</p>
-    </section>
-
-    <nav class="tabs" aria-label="Tool type">
-      <button class="tab active" data-type="story">📖 Create Story</button>
-      <button class="tab" data-type="imagePrompt">🎨 Image Prompt</button>
-    </nav>
-
-    <section class="panel">
-      <form id="create-form">
-        <label for="topic">အကြောင်းအရာ / စိတ်ကူး <span class="required">*</span></label>
-        <textarea id="topic" required placeholder="ဥပမာ - တောအုပ်ထဲမှာ လျှို့ဝှက်အိမ်တစ်လုံးကို တွေ့သွားတဲ့ ကလေးတစ်ယောက်..."></textarea>
-
-        <div class="two-col">
-          <div>
-            <label for="language">ဘာသာစကား</label>
-            <select id="language"><option value="Burmese">မြန်မာ</option><option value="English">English</option></select>
-          </div>
-          <div>
-            <label for="genre">အမျိုးအစား</label>
-            <select id="genre">
-              <option>Horror</option><option>Adventure</option><option>Romance</option>
-              <option>Comedy</option><option>Fantasy</option><option>Mystery</option>
-              <option>Action</option><option>Drama</option><option>Educational</option>
-            </select>
-          </div>
-        </div>
-
-        <label for="characters">ဇာတ်ကောင် / ပုံထဲပါမည့်အရာ</label>
-        <input id="characters" placeholder="ဥပမာ - အသက် ၁၀ နှစ်အရွယ် ကလေး၊ အဖြူရောင်ကြောင်">
-
-        <label for="setting">နေရာ / Scene</label>
-        <input id="setting" placeholder="ဥပမာ - မိုးရွာနေတဲ့ ရွာလေး၊ ရှေးဟောင်းရဲတိုက်">
-
-        <div class="two-col" id="story-options">
-          <div>
-            <label for="length">ဇာတ်လမ်းအရှည်</label>
-            <select id="length"><option>Short</option><option selected>Medium</option><option>Long</option></select>
-          </div>
-          <div>
-            <label for="style">ရေးဟန်</label>
-            <select id="style"><option>Engaging and vivid</option><option>Simple and clear</option><option>Emotional and cinematic</option><option>Funny and playful</option></select>
-          </div>
-        </div>
-        <div id="image-options" class="hidden">
-          <label for="image-style">ပုံစံ / Art style</label>
-          <select id="image-style">
-            <option>High-quality cinematic digital art</option><option>3D animation</option>
-            <option>Anime illustration</option><option>Photorealistic</option>
-            <option>Watercolor painting</option><option>Traditional Myanmar art</option>
-          </select>
-        </div>
-
-        <button class="primary" id="generate" type="submit"><span>✨</span> <span id="button-text">ဇာတ်လမ်း ဖန်တီးမယ်</span></button>
-        <p class="hint">API အသုံးပြုခ က သင့်ရွေးချယ်ထားတဲ့ AI Provider ရဲ့ စည်းမျဉ်းအပေါ် မူတည်ပါတယ်။</p>
-      </form>
-    </section>
-
-    <section class="result-panel">
-      <div class="result-head"><div><p class="eyebrow">YOUR CREATION</p><h2>ရလဒ်</h2></div><button id="copy" class="copy" disabled>ကူးယူရန်</button></div>
-      <div id="status" class="status">သင့်စိတ်ကူးကို အပေါ်မှာဖြည့်ပြီး စတင်ဖန်တီးနိုင်ပါတယ်။</div>
-      <pre id="result" class="result" aria-live="polite"></pre>
-    </section>
-
-    <footer>AVT Studio · Story & Image Prompt only · No video feature</footer>
-  </main>
-  <script src="/app.js"></script>
-</body>
-</html>
+<html lang="my"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AVT Story & Video Studio</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><div class="brand">🎬 AVT Studio</div><div class="sub">AI Story · Character · Scene · Video Prompt</div></header>
+<main>
+<section class="hero"><span class="tag">AI CREATIVE STUDIO</span><h1>ကိုယ့်စိတ်ကူးကို ဇာတ်လမ်းအဖြစ် ဖန်တီးမယ်</h1><p>ဇာတ်လမ်း၊ ဇာတ်ကောင်၊ Dialogue နဲ့ ၁၀ စက္ကန့်စီ Video Prompt များကို တစ်နေရာတည်းမှာ ဖန်တီးပါ။</p></section>
+<form id="creator">
+<div class="panel"><h2>၁။ ဇာတ်လမ်းအကြောင်း</h2>
+<label>ဇာတ်လမ်းအမျိုးအစား</label><select name="genre"><option>Adventure</option><option>Action</option><option>Horror</option><option>Romance</option><option>Comedy</option><option>Fantasy</option><option>Mystery</option><option>Science Fiction</option><option>Drama</option></select>
+<label>ဇာတ်လမ်းစိတ်ကူး (မရေးတတ်ရင် ဗလာထားနိုင်ပါတယ်)</label><textarea name="idea" rows="3" placeholder="ဥပမာ - ရှေးဟောင်းမြို့တစ်မြို့မှာ လျှို့ဝှက်ချက်ကို ရှာဖွေတဲ့ မိန်းကလေးတစ်ယောက်..."></textarea>
+<div class="grid"><div><label>ဇာတ်လမ်းကြာချိန်</label><select name="durationSeconds" id="duration"><option value="30">၃၀ စက္ကန့်</option><option value="60" selected>၁ မိနစ်</option><option value="90">၁ မိနစ် ၃၀ စက္ကန့်</option><option value="120">၂ မိနစ်</option><option value="180">၃ မိနစ်</option><option value="300">၅ မိနစ်</option><option value="600">၁၀ မိနစ်</option></select></div><div><label>ဘာသာစကား</label><select name="language"><option>Burmese</option><option>English</option><option>Thai</option><option>Japanese</option></select></div></div>
+<div class="note" id="sceneCount">၁ မိနစ် = ၁၀ စက္ကန့်စီ Scene ၆ ခု</div></div>
+<div class="panel"><h2>၂။ ဇာတ်ကောင် ရွေးချယ်ခြင်း</h2><div class="grid"><div><label>ဇာတ်ကောင်အရေအတွက်</label><select name="characterCount"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div><div><label>ဇာတ်ကောင်ပုံစံ</label><input name="characters" placeholder="ဥပမာ - လူငယ်သူရဲကောင်း၊ မှော်ဆရာမ"></div></div>
+<label>အဝတ်အစား / အသွင်အပြင်</label><input name="clothing" placeholder="ဥပမာ - အနက်ရောင်ကုတ်၊ အပြာရောင်ဝတ်စုံ၊ ရှေးခေတ်ဝတ်စုံ">
+<label>ဇာတ်လမ်းနေရာ</label><input name="location" placeholder="ဥပမာ - မိုးရွာနေတဲ့မြို့၊ တောအုပ်၊ အာကာသစခန်း">
+<p class="hint">ဇာတ်ကောင်အကြံဉာဏ် မရှိလည်းရပါတယ်။ AI ကိုယ်တိုင် ဇာတ်ကောင်အသစ်တွေ ဖန်တီးခိုင်းနိုင်ပါတယ်။</p></div>
+<div class="panel"><h2>၃။ စကားပြောပုံနဲ့ Platform</h2><label>အသံ / Dialogue ပုံစံ</label><select name="voiceMode"><option>Character dialogue</option><option>Narrator only</option><option>Mixed character dialogue and narrator</option><option>No dialogue, visual storytelling only</option></select>
+<label>ဘယ် Platform အတွက်လဲ</label><select name="platform"><option>TikTok 9:16 vertical</option><option>YouTube 16:9 landscape</option><option>YouTube Shorts 9:16 vertical</option><option>Facebook Reels 9:16 vertical</option></select>
+<label>ရုပ်ရှင်ပုံစံ</label><select name="tone"><option>Cinematic</option><option>Anime</option><option>Realistic</option><option>3D Animation</option><option>Cartoon</option></select></div>
+<button id="submit" type="submit">✨ AI နဲ့ ဇာတ်လမ်းဖန်တီးမယ်</button><div id="status" role="status"></div>
+</form><section id="results" hidden><div class="resultHead"><h2 id="title"></h2><button type="button" class="secondary" id="copyAll">အားလုံး Copy ကူးမယ်</button></div><p id="logline"></p><div id="charactersOut"></div><div id="scenes"></div></section>
+<footer>AVT Studio · AI prompts for external image/video tools</footer></main><script src="/app.js"></script></body></html>
